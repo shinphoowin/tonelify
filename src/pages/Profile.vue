@@ -41,12 +41,23 @@ import ItemsGroup from '../components/ItemsGroup.vue';
 
         <v-row>
             <v-col>
-                <router-link to="/login"> 
-                <v-img :aspect-ratio="(16/9)" :width="800"
-                    src="../src/assets/mypng.60f6d326.png" cover class="mb-8vh"></v-img>
-                    </router-link>
+                <router-link to="/login">
+                    <v-img :aspect-ratio="(16 / 9)" :width="800" src="../src/assets/mypng.60f6d326.png" cover
+                        class="mb-8vh"></v-img>
+                </router-link>
             </v-col>
         </v-row>
 
     </v-container>
 </template>
+
+<script>
+import {router} from "../routes"
+export default {
+    mounted() {
+        if( localStorage.getItem('loginToken') == null){
+            router.push('/');
+        }
+    }
+}
+</script>

@@ -7,7 +7,7 @@
                     首页
                 </v-btn>
             </router-link>
-            
+
             <router-link to="/login">
                 <v-btn value="bill" class="bottomnav">
                     <v-icon>mdi-heart</v-icon>
@@ -22,12 +22,12 @@
                 </v-btn>
             </router-link>
 
-            <router-link to="/profile">
-                <v-btn value="account" class="bottomnav">
-                    <v-icon>mdi-account</v-icon>
-                    我的
-                </v-btn>
-            </router-link>
+
+            <v-btn value="account" class="bottomnav">
+                <v-icon>mdi-account</v-icon>
+                我的
+            </v-btn>
+
         </v-bottom-navigation>
     </v-app>
 </template>
