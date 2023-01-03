@@ -32,7 +32,7 @@
     <div class="text-caption pa-6 bg-white text-center mgt-10 br-8">
         <v-row no-gutters>
             3000<v-slider v-model="form.amount" class="align-center" :max="max" :min="min"
-                color="green" update:focused="true" update:modelValue="form.amount" @click="changeEvent">
+                color="green">
             </v-slider>300000
         </v-row>
         &nbsp;<div class="text-grey text-body-2 text-center cus-mgr-pd">拖动调整额度</div>
