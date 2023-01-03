@@ -14,14 +14,26 @@ import Button from './Button.vue'
                 <v-col class="text-h2" cols="10.5">
                     300000
                 </v-col>
-                <Button />
+                <router-link to="/apply-loan">
+                    <Button />
+                </router-link>
+
             </v-row>
         </v-card-text>
 
         <v-card-item>
             <template v-slot:subtitle>
-                最低利率  0.02% (年化利率 0.73% )
+                最低利率 0.02% (年化利率 0.73% )
             </template>
         </v-card-item>
     </v-card>
 </template>
+<script>
+export default {
+    methods: {
+        goSlide() {
+
+        }
+    }
+}
+</script>

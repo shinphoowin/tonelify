@@ -8,7 +8,7 @@
 
         <div v-if="!islogin">
             <v-btn color="black" variant="text" class="mx-2" @click="handleLogIn">
-                login
+                登录
             </v-btn>
         </div>
         <div v-else>
@@ -41,7 +41,7 @@ export default {
                 localStorage.removeItem('loginToken');
                 this.islogin = false;
                 router.push('/');
-            } 
+            }
         },
         handleLogIn() {
             if (localStorage.getItem('loginToken') !== null) {

@@ -111,7 +111,7 @@ export default {
                         // Handle success
                         // console.log(res.data);
                         if (res.data.token !== '') {
-                            console.log("authenticated user!!");
+                            console.log("registered successfully!!");
                             this.form.loading = true;
                             localStorage.setItem('loginToken', res.data.token);
                             router.push('/profile')
